@@ -86,9 +86,14 @@ main {
     border: 2px solid var(--neon);
 }
 
-.hero-image {
+.hero-image-wrapper {
     position: relative;
     top: 180px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
 }
 
 .misc1 {
@@ -131,4 +136,9 @@ main {
     position: relative;
     right: 50px;
 }
+
+    .hero-text {
+        font-size: 3rem;
+    }
+
 }
