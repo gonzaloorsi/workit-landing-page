@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: url('./assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf') format('truetype');
+   }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html  {
+    --neon : #44FFA1;
+}
+
+body {
+    font-family: 'Fraunces';
+}
+
+header {
+    background-color: #24053E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+header img {
+    position: relative;
+    left: 150px;
+}
+
+
+header a{
+    color: white;
+    border-bottom: 2px solid var(--neon);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    right: 150px;
+}
+
+header a:hover {
+    color: var(--neon)
+}
+
+main {
+    background-color: #24053E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 100% 100% 95% 95% / 0% 0% 30% 30%;
+                    
+
+}
+
+.hero {
+    position: relative;
+    top: 80px;
+}
+
+.hero-text {
+    font-size: 4.5rem;
+    color: white;
+    line-height: 1;
+    margin-bottom: 1.7rem;
+
+}
+
+.hero button {
+    background-color: var(--neon);
+    padding: 10px;
+    border: 2px solid var(--neon);
+    cursor: pointer;
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.hero button:hover {
+    background-color: transparent;
+    color: var(--neon);
+    border: 2px solid var(--neon);
+}
+
+.hero-image {
+    position: relative;
+    top: 180px;
+}
+
+.misc1 {
+    background: url("./assets/images/bg-pattern-1.svg");
+    width: 270px;
+    height: 215px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 200px;
+    left: -90px;
+    background-size: contain;
+}
+
+.misc2 {
+    background: url("./assets/images/bg-pattern-2.svg");
+    width: 141px;
+    height: 112px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 400px;
+    right: -70px;
+    /* transform: rotate(10deg); */
+    background-size: contain;
+}
