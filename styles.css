@@ -113,3 +113,22 @@ main {
     /* transform: rotate(10deg); */
     background-size: contain;
 }
+
+
+@media (max-width: 37rem){
+
+    .misc1,
+    .misc2 {
+        display: none;
+    }
+
+    header img {
+        position: relative;
+        left: 50px;
+    }
+
+    header a{
+    position: relative;
+    right: 50px;
+}
+}
