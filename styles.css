@@ -17,7 +17,6 @@ body {
     font-family: 'Fraunces';
     overflow-x: hidden;
     height: 100%;
-    background-color: #FCF8FF;
 }
 
 header {
@@ -131,13 +130,24 @@ main {
     background-size: contain;
 }
 
+body .misc3 {
+    background-color: #FCF8FF;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
 
 .value-props {
     height: 960px;
-    border-radius: 100% 100% 95% 95% / 0% 0% 30% 30%;
     color: #24053E;
     display: grid;
     place-content: center;
+    background-color: #FCF8FF;
+    border-radius: 100% 100% 95% 95% / 0% 0% 30% 30%;
 
 }
 
@@ -146,7 +156,6 @@ main {
     justify-content: center;
     text-align: center;
     gap: 2rem;
-    border: 1px solid green;
 }
 
 .card {
@@ -155,8 +164,13 @@ main {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    border: 1px solid black;
+    padding: 1rem;
 }
+
+.card-content {
+    width: 20rem;
+}
+
 
 .card h3{
     border: 1px solid black;
@@ -166,6 +180,44 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+footer {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 3rem;
+}
+
+.announcement {
+    display: flex;
+
+}
+
+.div1 {
+    width: 10rem;
+    height: 10rem;
+    background-color: red;
+    position: relative;
+    top: 2rem;
+
+}
+
+.div2 {
+    width: 12rem;
+    height: 12rem;
+    background-color: blue;
+    position: relative;
+    bottom: -5rem;
+}
+
+.contact {
+    width: 8rem;
+    height: 8rem;
+    background-color: green;
 }
 
 @media (max-width: 37rem){
@@ -195,11 +247,16 @@ main {
     }
 
     .value-props {
-        top: 200px;
+        position: relative;
+        place-content: center;
+        z-index: -1;
+        top: 100px
     }
 
     .cards {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
 }
