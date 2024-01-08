@@ -78,7 +78,8 @@ main {
     text-underline-offset: 10px;
 }
 
-.hero button {
+.hero button,
+.div2 button {
     background-color: var(--neon);
     padding: 10px;
     border: 2px solid var(--neon);
@@ -89,7 +90,8 @@ main {
 }
 
 
-.hero button:hover {
+.hero button:hover,
+.div2 button:hover {
     background-color: transparent;
     color: var(--neon);
     border: 2px solid var(--neon);
@@ -173,7 +175,6 @@ body .misc3 {
 
 
 .card h3{
-    border: 1px solid black;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -184,12 +185,12 @@ body .misc3 {
 
 
 footer {
-    height: 600px;
+    height: 960px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 3rem;
+
 }
 
 .announcement {
@@ -200,24 +201,50 @@ footer {
 .div1 {
     width: 10rem;
     height: 10rem;
-    background-color: red;
     position: relative;
-    top: 2rem;
-
+    right: 14rem;
+    bottom: 6rem;
 }
 
 .div2 {
-    width: 12rem;
-    height: 12rem;
-    background-color: blue;
+    width: 730px;
+    height: 413px;
+    background-color: #24053E;
     position: relative;
     bottom: -5rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 2rem;
+}
+
+.div2 h2 {
+    font-size: 3rem;
+}
+
+.div2 p {
+    line-height: 1.6rem;
+}
+
+.div2 button {
+    width: max-content;
 }
 
 .contact {
     width: 8rem;
     height: 8rem;
-    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sm-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 @media (max-width: 37rem){
@@ -257,6 +284,56 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    footer {
+        height: 960px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 50px;
+    
+    }
+
+    .announcement {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .div1 {
+        position: static;
+        width: 100%;
+        text-align: center;
+    }
+
+    .div1 img {
+        width: 281px;
+        height: 281px;
+    }
+
+    .div2 {
+        width: 100%;
+        height: 375px;
+        background-color: #24053E;
+        padding: 1rem;
+        gap: 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div2 h2 {
+        font-size: 2rem;
+    }
+
+    .div2 p{ 
+        line-height: 1.5rem;
+        font-weight: 300;
     }
 
 }
