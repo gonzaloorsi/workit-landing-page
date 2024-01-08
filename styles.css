@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding-top: 50px;
 }
 
 header img {
@@ -91,7 +91,8 @@ main {
 
 
 .hero button:hover,
-.announcement-description button:hover {
+. button:hover {
+    
     background-color: transparent;
     color: var(--neon);
     border: 2px solid var(--neon);
