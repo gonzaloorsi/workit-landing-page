@@ -132,6 +132,18 @@ main {
     background-size: contain;
 }
 
+.misc4 {
+    background: url("./assets/images/bg-pattern-3.svg");
+    width: 173px;
+    height: 137px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -120px;
+    right: 50px;
+    background-size: contain;
+    z-index: 3;
+}
+
 body .misc3 {
     background-color: #FCF8FF;
     position: absolute;
@@ -177,6 +189,7 @@ body .misc3 {
 .card h3{
     width: 3rem;
     height: 3rem;
+    border: 1px solid black;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -195,6 +208,7 @@ footer {
 
 .announcement {
     display: flex;
+    position: relative;
 
 }
 
@@ -250,7 +264,8 @@ footer {
 @media (max-width: 37rem){
 
     .misc1,
-    .misc2 {
+    .misc2,
+    .misc4 {
         display: none;
     }
 
